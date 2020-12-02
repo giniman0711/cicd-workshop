@@ -1,12 +1,10 @@
 pipeline {
-  agent {
-    label 'maven'
-  }
-  stages {
-    stage('maven') {
-      steps {
-        sh 'mvn --version'
-      }
-    }
-  }
+	agent any
+	stages {
+		stage('Example') {
+			steps {
+				echo 'Hello World'
+			}
+		}
+	}
 }
